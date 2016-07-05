@@ -27,7 +27,7 @@
 				<section>
 					<img src="img/react-logo.png" alt="" width="250"/>
 					<h2>React Starter Kit</h2>
-					<p>Por Marcelo Alves y David Garcia</p>
+					<p>Por David García</p>
 				</section>
 
 				<section>
@@ -50,7 +50,7 @@
 					</section>
 					<section>
 						<img src="img/react-logo.png" alt="" width="150"/>
-						<p>¿Qué aporta ReactJS?</p>
+						<p>ReactJS facilita</p>
 						<h2>Flujo de Datos Unidireccional</h2>
 						<small>Sólo cambios en <span class="highlighted">State</span> actualizan UI</small>
 					</section>
@@ -59,6 +59,12 @@
 						<p>¿Qué aporta ReactJS?</p>
 						<h2>Performance</h2>
 						<small>Herramienta de Diff + DOM virtual</small>
+					</section>
+					<section>
+						<img src="img/react-logo.png" alt="" width="150"/>
+						<p>¿Qué aporta ReactJS?</p>
+						<h2>Isomorfismo</h2>
+						<small>Se ejecuta en cliente y servidor</small>
 					</section>
 				</section>
 
@@ -90,426 +96,62 @@
 						<h2>State</h2>
 						<small>Define el estado <span class="highlighted">interno</span> del componente</small>
 					</section>
-
 				</section>
 
 <!-- NPM CLI  -->
 
 				<section>
-
 					<section>
-						<img src="img/npm-logo.png" alt="" width="200"/>
-						<h2>npm CLI</h2>
-						<p><span class="highlighted">Inicializar</span> un proyecto npm</p>
-						<code>
-							<pre>
-<span class="highlighted">$ ></span> npm init
-<span class="highlighted">$ ></span> npm init -y // Sin asistente</pre>
-						</code>
-						<small style="display:block">Lanza asistente de creación de package.json si no añadimos el flag -y</small>
+						<img src="img/react-logo.png" alt="" width="150"/>
+						<h2>¿Por donde empiezo?</h2>
 					</section>
 
 					<section>
-						<img src="img/npm-logo.png" alt="" width="200"/>
-						<h2>npm CLI</h2>
-						<p>Estructura del <span class="highlighted">package.json</span></p>
-						<code>
-							<pre>
-{
-  <span class="highlighted">"name": "@schibstedspain/sui-card",
-  "version": "7.1.0",</span>
-  "main": "dist/",
-  "scripts": {
-    "dist": "npm run dist:scripts && npm run dist:styles",
-    "test": "mocha --compilers js:babel-core/register  --recursive",
-  },
-  "dependencies": {
-    "classnames": "2.2.0"
-  },
-  "devDependencies": {
-    "@schibstedspain/sui-multimedia": "0.1",
-  }
-}
-							</pre>
-						</code>
-						<small style="display:block">Ejemplo resumido de archivo de meta-datos del proyecto npm</small>
+						<img src="img/react-logo.png" alt="" width="150"/>
+						<h1 class="highlighted">1</h1>
+						<h2>ReactJS en sí</h2>
+						<ul>
+							<li><a href="https://egghead.io/courses/react-fundamentals">React Fundamentals Egghead</a></li>
+						</ul>
 					</section>
 
 					<section>
-						<img src="img/npm-logo.png" alt="" width="200"/>
-						<h2>npm CLI</h2>
-						<p><span class="highlighted">Instalación</span> de paquetes npm</p>
-						<code>
-							<pre>
-<span class="highlighted">$ ></span> npm install [nombre del package]
-<span class="highlighted">$ ></span> npm install [nombre del package]@3.4.12 // Versión específica
-<span class="highlighted">$ ></span> npm i [nombre del package] // shortcut</pre>
-						</code>
-						<small style="display:block">prueba <span class="highlighted">$ > npm isntall</span></small>
+						<img src="img/npm-logo.png" alt="" width="150"/>
+						<h1 class="highlighted">2</h1>
+						<h2>Entorno npm</h2>
+						<ul>
+							<li><a href="http://davecarter.github.io/npm-meetup/">npm Frontend Boilerplate</a></li>
+						</ul>
 					</section>
 
 					<section>
-						<img src="img/npm-logo.png" alt="" width="200"/>
-						<h2>npm CLI</h2>
-						<p>Instalación de paquetes <span class="highlighted">locales</span></p>
-						<code>
-							<pre>
-<span class="highlighted">$ ></span> npm install [nombre del package] -S
-<span class="highlighted">$ ></span> npm install [nombre del package] --save</pre>
-						</code>
-						<small style="display:block">Añadimos como dependencia en <span class="highlighted">package.json</span></span></small>
+						<img src="img/webpack-logo.png" alt="" width="150"/>
+						<h1 class="highlighted">3</h1>
+						<h2>Webpack bundler</h2>
+						<ul>
+							<li><a href="https://github.com/danderu/learn-webpack">Learn Webpack</a></li>
+						</ul>
 					</section>
 
 					<section>
-						<img src="img/npm-logo.png" alt="" width="200"/>
-						<h2>npm CLI</h2>
-						<p>Instalación de paquetes como <span class="highlighted">dependencia de desarrollo</span></p>
-						<code>
-							<pre>
-<span class="highlighted">$ ></span> npm install [nombre del package] -D
-<span class="highlighted">$ ></span> npm install [nombre del package] --save-dev</pre>
-						</code>
-						<small style="display:block">Añadimos como dependencia de desarrollo en <span class="highlighted">package.json</span></span></small>
+						<img src="img/es6-logo.png" alt="" width="150"/>
+						<h1 class="highlighted">4</h1>
+						<h2>ECMAScript 2015</h2>
+						<ul>
+							<li><a href="http://exploringjs.com/es6/">Exploring ES6 book</a></li>
+						</ul>
 					</section>
 
 					<section>
-						<img src="img/npm-logo.png" alt="" width="200"/>
-						<h2>npm CLI</h2>
-						<p>Instalación de paquetes <span class="highlighted">globales</span></p>
-						<code>
-							<pre>
-<span class="highlighted">$ ></span> npm install [nombre del package] -g
-<span class="highlighted">$ ></span> npm install [nombre del package] --global</pre>
-						</code>
-						<small style="display:block">Estará disponible a nivel de <span class="highlighted">usuario</span></span></small>
+						<img src="img/react-logo.png" alt="" width="150"/>
+						<h1 class="highlighted">5</h1>
+						<h3>Routing, Redux, Isomorfismo</h3>
+						<ul>
+							<li><a href="https://egghead.io/courses/getting-started-with-react-router">React Router Egghead</a></li>
+							<li><a href="https://egghead.io/courses/getting-started-with-redux">Redux Egghead</a></li>
+						</ul>
 					</section>
-
-					<section>
-						<img src="img/npm-logo.png" alt="" width="200"/>
-						<h2>npm CLI</h2>
-						<p>Instalación de <span class="highlighted">múltiples</span> paquetes</p>
-						<code>
-							<pre>
-<span class="highlighted">$ ></span> npm install [package1] [package2] [package3] --save</pre>
-						</code>
-						<small style="display:block">También podemos añadir <span class="highlighted">múltiples</span> argumentos</span></small>
-					</section>
-
-					<section>
-						<img src="img/npm-logo.png" alt="" width="200"/>
-						<h2>npm CLI</h2>
-						<p><span class="highlighted">Actualización</span> de paquetes</p>
-						<code>
-							<pre>
-<span class="highlighted">$ ></span> npm update [package]</pre>
-						</code>
-						<small style="display:block">Obtenemos la versión más reciente del repositorio de <span class="highlighted">npm</span></span></small>
-					</section>
-
-					<section>
-						<img src="img/npm-logo.png" alt="" width="200"/>
-						<h2>npm CLI</h2>
-						<p><span class="highlighted">Desinstalación</span> de paquetes</p>
-						<code>
-							<pre>
-<span class="highlighted">$ ></span> npm uninstall [package] // sólo borramos carpeta node_modules
-<span class="highlighted">$ ></span> npm uninstall [package] --save // eliminamos dep
-<span class="highlighted">$ ></span> npm uninstall [package] --save-dev // eliminamos devDep
-
-<span class="highlighted">$ ></span> npm un [package]</pre>
-						</code>
-						<small style="display:block">Utiliza el flag --save o --save-dev para eliminarlo del <span class="highlighted">package.json</span></small>
-					</section>
-
-					<section>
-						<img src="img/npm-logo.png" alt="" width="200"/>
-						<h2>npm CLI</h2>
-						<p><span class="highlighted">Enlazar</span> paquetes locales</p>
-						<code>
-							<pre>
-<span class="highlighted">$ ></span> npm link // En el paquete a enlazar
-<span class="highlighted">$ ></span> npm link [package] // En el paquete que carga la dependencia</pre>
-						</code>
-						<small style="display:block">Crea un Symlink a la carpeta <span class="highlighted">node_modules</span> local</small>
-						<small style="display:block">...a veces no funciona :(</small>
-						<small>...acepta un único nivel de recursividad</small>
-					</section>
-
-					<section>
-						<img src="img/npm-logo.png" alt="" width="200"/>
-						<h2>npm CLI</h2>
-						<p><span class="highlighted">Desenlazar</span> paquetes</p>
-						<code>
-							<pre>
-<span class="highlighted">$ ></span> npm unlink // En el paquete a desenlazar
-<span class="highlighted">$ ></span> npm unlink [package] // En el paquete que cargaba la dependencia</pre>
-						</code>
-						<small style="display:block">Al desenlazar un paquete necesitaremos volver a ejecutar <span class="highlighted">npm install</span></small>
-					</section>
-
-					<section>
-						<img src="img/npm-logo.png" alt="" width="200"/>
-						<h2>npm CLI</h2>
-						<p><span class="highlighted">Publicar</span> un paquete a npm</p>
-						<code>
-							<pre>
-<span class="highlighted">$ ></span> npm publish</pre>
-						</code>
-						<small style="display:block">Un paquete no puede volver a re-publicarse con la <span class="highlighted">misma versión</span></small>
-						<small style="padding-top:10px">Si despublicas un paquete puedes <a href="http://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm">romper Internet</a></small>
-					</section>
-
-					<section>
-						<img src="img/npm-logo.png" alt="" width="200"/>
-						<h2>npm CLI</h2>
-						<p><span class="highlighted">Mostrar</span> información de un paquete</p>
-						<code>
-							<pre>
-<span class="highlighted">$ ></span> npm view [package]
-<span class="highlighted">$ ></span> npm view [package] versions</pre>
-						</code>
-						<small style="display:block">Lee metadatos del <span class="highlighted">package.json</span></small>
-					</section>
-
 				</section>
-
-<!-- NPM SCRIPTS  -->
-
-				<section>
-
-					<section>
-						<img src="img/npm-logo.png" alt="" width="200"/>
-						<h2>npm Scripts</h2>
-						<p><span class="highlighted">Ejecutar</span> un script</p>
-						<code>
-							<pre>
-"scripts": {
-  "sass": "node-sass -o dist/css src/scss"
- }
-
-<span class="highlighted">$ ></span> npm run sass</pre>
-						</code>
-						<small style="display:block">Mediante 'npm run [script]' podemos ejecutar scripts definidos en el <span class="highlighted">package.json</span></small>
-					</section>
-
-					<section>
-						<img src="img/npm-logo.png" alt="" width="200"/>
-						<h2>npm Scripts</h2>
-						<p><span class="highlighted">Agrupando</span> scripts</p>
-						<code>
-							<pre>
-"scripts": {
-  "lint:sass": "sass-lint src/**/*.scss -c -v",
-  "lint:js": "eslint src/js/**/*.js",
-  "lint": "npm run lint:sass && npm run lint:js"
- }
-
-<span class="highlighted">$ ></span> npm run lint
-<span class="highlighted">$ ></span> npm run lint:sass
-<span class="highlighted">$ ></span> npm run lint:js</pre>
-						</code>
-						<small style="display:block">'npm run lint' ejecutaría 'npm run lint:sass' y 'npm run lint:js'</small>
-					</section>
-
-					<section>
-						<img src="img/npm-logo.png" alt="" width="200"/>
-						<h2>npm Scripts</h2>
-						<p>npm <span class="highlighted">Start</span></p>
-						<code>
-							<pre>
-"scripts": {
-  "start": "npm run start:open && npm run start:server",
-  "start:server": "webpack-dev-server",
-  "start:open": "opener http://localhost:8080"
- }
-
-<span class="highlighted">$ ></span> npm run start
-<span class="highlighted">$ ></span> npm start</pre>
-						</code>
-						<small style="display:block">script standar para lanzar un proyecto npm</small>
-						<small style="display:block">'npm start' no necesita especificar 'run'</small>
-					</section>
-
-					<section>
-						<img src="img/npm-logo.png" alt="" width="200"/>
-						<h2>npm Scripts</h2>
-						<p>ciclo de <span class="highlighted">ejecución</span> de scripts</p>
-						<code>
-							<pre>
-"scripts": {
-  "predist": "rimraf ./dist/*",
-  "dist": "webpack",
-  "postdist": "copyfiles ./dist/* ./docs/ && gh-pages -d docs"
- }
-
-<span class="highlighted">$ ></span> npm run dist</pre>
-						</code>
-						<small style="display:block">npm buscará scripts con prefijos 'pre' y 'post' y si existen los ejecutará antes y después respectivamente</small>
-					</section>
-
-				</section>
-
-<!-- npm Frontend Boilerplate  -->
-
-			<section>
-
-				<section>
-					<img src="img/npm-logo.png" alt="" width="200"/>
-					<h2>Frontend Boilerplate</h2>
-					<p>Instalación de <span class="highlighted">node-sass</span></p>
-					<code>
-						<pre>
-"scripts": {
-  "css": "node-sass -o dist/css src/scss --output-style compressed --source-map-embed"
-}
-
-<span class="highlighted">$ ></span> npm install node-sass --save-dev
-<span class="highlighted">$ ></span> npm run css</pre>
-					</code>
-					<small style="display:block"><a href="https://www.npmjs.com/package/node-sass">node-sass</a> es un wrapper de 'LibSass' sobre node que nos permite preprocesar archivos '.scss'</small>
-				</section>
-
-				<section>
-					<img src="img/npm-logo.png" alt="" width="200"/>
-					<h2>Frontend Boilerplate</h2>
-					<p>Instalación de <span class="highlighted">autoprefixer</span></p>
-					<code>
-						<pre>
-"scripts": {
-  "autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers '> 5%, ie 9' -r dist/css/*"
-}
-
-<span class="highlighted">$ ></span> npm install autoprefixer postcss-cli --save-dev
-<span class="highlighted">$ ></span> npm run autoprefixer</pre>
-					</code>
-					<small style="display:block"><a href="https://www.npmjs.com/package/node-sass">node-sass</a> es un wrapper de 'LibSass' sobre node que nos permite preprocesar archivos '.scss'</small>
-				</section>
-
-				<section>
-					<img src="img/npm-logo.png" alt="" width="200"/>
-					<h2>Frontend Boilerplate</h2>
-					<p>Instalación de <span class="highlighted">BabelJS</span></p>
-					<code>
-						<pre>
-"scripts": {
-  "build:js": "babel src/js --out-dir dist/js"
-}
-
-<span class="highlighted">$ ></span> npm install babel-cli babel-preset-es2015 --save-dev
-<span class="highlighted">$ ></span> npm run build:js</pre>
-					</code>
-					<small style="display:block"><a href="https://babeljs.io/">BabelJS</a> es un transpiler de archivos JS que nos permite utilizar versiones futuras de Javascript</small>
-					<small style="display:block">Instala en la raiz de tu proyecto un archivo <a href="https://github.com/davecarter/npm-project/blob/master/.babelrc">.babelrc</a> con la configuración</small>
-				</section>
-
-				<section>
-					<img src="img/npm-logo.png" alt="" width="200"/>
-					<h2>Frontend Boilerplate</h2>
-					<p>Linting de Sass y Javascript con <span class="highlighted">Eslint</span></p>
-					<code>
-						<pre>
-"scripts": {
-  "lint:sass": "sass-lint src/**/*.scss -c -v",
-  "lint:js": "eslint src/js/**/*.js",
-  "lint": "npm run lint:sass && npm run lint:js"
-}
-
-<span class="highlighted">$ ></span> npm install eslint sass-lint babel-eslint --save-dev
-<span class="highlighted">$ ></span> npm run lint</pre>
-					</code>
-					<small style="display:block"><a href="http://eslint.org/">Eslint</a> es un potente linter que soporta Sass, JS y JSX</small>
-					<small style="display:block">Instala en la raiz de tu proyecto un archivo <a href="https://github.com/davecarter/npm-project/blob/master/.eslintrc.json">.eslintrc.json</a> con la configuración</small>
-					<small style="display:block">Instala en la raiz de tu proyecto un archivo <a href="https://github.com/davecarter/npm-project/blob/master/.sass-lint.yml">.sass-lint.yml</a> con la configuración</small>
-				</section>
-
-				<section>
-					<img src="img/npm-logo.png" alt="" width="200"/>
-					<h2>Frontend Boilerplate</h2>
-					<p>Test unitarios con <span class="highlighted">MochaJS y Chai</span></p>
-					<code>
-						<pre>
-"scripts": {
-  "test": "mocha --compilers js:babel-register",
-  "test:watch": "mocha --compilers js:babel-register --watch"
-}
-
-<span class="highlighted">$ ></span> npm install mocha chai --save-dev
-<span class="highlighted">$ ></span> npm run test
-<span class="highlighted">$ ></span> npm run test:watch // modo TDD</pre>
-					</code>
-					<small style="display:block"><a href="http://eslint.org/">MochaJS</a> es un framework de test unitarios. Además instalaremos la librería de aserciones <a href="http://chaijs.com/">Chai</a></small>
-				</section>
-
-				<section>
-					<img src="img/npm-logo.png" alt="" width="200"/>
-					<h2>Frontend Boilerplate</h2>
-					<p><span class="highlighted">Pre-commit</span> hook</p>
-					<code>
-						<pre>
-"pre-commit": [
-  "lint",
-  "test"
-]
-
-<span class="highlighted">$ ></span> npm install precommit-hook --save-dev</pre>
-
-					</code>
-					<small style="display:block">El <a href="https://www.npmjs.com/package/precommit-hook">pre-commit</a> hook no nos permitirá publicar a github si no pasamos las reglas especificadas por los linters</small>
-				</section>
-
-				<section>
-					<img src="img/npm-logo.png" alt="" width="200"/>
-					<h2>Frontend Boilerplate</h2>
-					<p><span class="highlighted">Watching</span> sass, js y html</p>
-					<code>
-						<pre>
-"scripts": {
-  "watch:css": "onchange src/scss/*.scss -- npm run build:css",
-  "watch:js": "onchange src/js/*.js -- npm run build:js",
-  "watch:html": "onchange dist/*.html -- npm run serve"
-}
-
-<span class="highlighted">$ ></span> npm install onchange --save-dev
-
-<span class="highlighted">$ ></span> npm run watch:css
-<span class="highlighted">$ ></span> npm run watch:js
-<span class="highlighted">$ ></span> npm run watch:html</pre>
-
-					</code>
-					<small style="display:block"><a href="https://www.npmjs.com/package/onchange">OnChange</a> nos permite detectar cambios en archivos para poder lanzar scripts npm</small>
-				</section>
-
-				<section>
-					<img src="img/npm-logo.png" alt="" width="200"/>
-					<h2>Frontend Boilerplate</h2>
-					<p><span class="highlighted">Recargando</span> el navegador con BrowserSync</p>
-					<code>
-						<pre>
-"scripts": {
-	"serve": "browser-sync start --server dist --files dist",
-	"dev": "parallelshell 'npm run watch:css' 'npm run watch:js' 'npm run serve'"
-}
-
-<span class="highlighted">$ ></span> npm install browser-sync parallelshell --save-dev
-
-<span class="highlighted">$ ></span> npm run dev</pre>
-
-					</code>
-					<small style="display:block"><a href="https://www.npmjs.com/package/parallelshell">ParallelShell</a> nos permite tener múltiples procesos ejecutándose al mismo tiempo</small>
-				</section>
-
-			</section>
-
-			<section>
-				<section>
-						<h2>Gracias!</h2>
-						<img src="https://pbs.twimg.com/profile_images/430835350114942976/7hRSb8rv_400x400.jpeg" alt="" width="200" style="display:block; margin: 0 auto 50px">
-						<small>Twitter - <a href="http://twitter.com/d4vecarter">@d4vecarter</a></small><br />
-						<small>Youtube - <a href="https://www.youtube.com/c/AprendiendoFrontend">Aprendiendo Frontend</a></small><br />
-						<small>GitHub - <a href="https://github.com/davecarter">davecarter</a></small><br />
-						<small>LinkedIn - <a href="https://www.linkedin.com/in/davidgarciaontivero">David García</a></small>
-				</section>
-			</section>
 
 			</div>
 		</div>
