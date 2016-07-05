@@ -8,6 +8,9 @@ Autor:
 Repositorio:
 - [ToDoMVC](https://github.com/davecarter/todoMVC-ReactJS)
 
+Slides:
+- [React Starter Kit](https://aprendiendofrontend.github.io/react-starter-kit/#/)
+
 ---
 
 - [License](#license)
