@@ -85,20 +85,57 @@
 
 					<section>
 						<img src="img/react-logo.png" alt="" width="150"/>
-						<p>Entorno ReactJS</p>
+						<h2>Stateless</h2>
+						<code>
+							<pre>
+const HelloWorld = props => {
+  return &lt;h1&gt;{props.message}&lt;/h1&gt;
+}
+</pre>
+						</code>
+					</section>
+
+					<section>
+						<img src="img/react-logo.png" alt="" width="150"/>
+						<h2>Statefull</h2>
+						<code>
+							<pre>
+class HelloWorld extends React.Component {
+  constructor(){
+    super();
+    this.state = {
+      active: true
+    }
+  }
+
+  render(){
+    return &lt;h1&gt;{props.message}&lt;/h1&gt;
+  }
+}
+</pre>
+						</code>
+					</section>
+
+					<section>
+						<img src="img/react-logo.png" alt="" width="150"/>
 						<h2>Props</h2>
 						<small>Datos <span class="highlighted">inmutables</span> que se pasan a los componentes</small>
 					</section>
 
 					<section>
 						<img src="img/react-logo.png" alt="" width="150"/>
-						<p>Entorno ReactJS</p>
 						<h2>State</h2>
 						<small>Define el estado <span class="highlighted">interno</span> del componente</small>
 					</section>
+
+					<section>
+						<img src="img/react-logo.png" alt="" width="150"/>
+						<h2>Ciclo de vida de Componentes</h2>
+						<small>Métodos que se ejecutan al <span class="highlighted">montarse, actualizarse o desmontarse</span> un componente</small>
+					</section>
 				</section>
 
-<!-- NPM CLI  -->
+<!-- React Resources  -->
 
 				<section>
 					<section>
@@ -152,6 +189,33 @@
 						</ul>
 					</section>
 				</section>
+
+				<section>
+					<section>
+						<img src="img/react-logo.png" alt="" width="150"/>
+						<h2>ToDo MVC en ReactJS</h2>
+					</section>
+
+					<section>
+						<img src="img/todoApp.png" alt="" width="600" style="display: block; Margin: 0 auto"/>
+						<small>Estructura de componentes</small>
+					</section>
+
+					<section>
+						<img src="img/github-logo.png" alt="" width="150"/>
+						<h3>Repositorio en Github</h3>
+						<a href="https://github.com/davecarter/todoMVC-ReactJS">davecarter/todoMVC-ReactJS</a>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Gracias!</h2>
+						<small>Twitter - <a href="http://twitter.com/d4vecarter">@d4vecarter</a></small><br />
+						<small>Youtube - <a href="https://www.youtube.com/c/AprendiendoFrontend">Aprendiendo Frontend</a></small><br />
+						<img src="img/af-cover.png" alt="" width="450" style="display:block; margin: 0 auto 50px">
+				</section>
+			</section>
 
 			</div>
 		</div>
