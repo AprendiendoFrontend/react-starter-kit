@@ -1,8 +1,8 @@
 {
   "name": "npm-meetup",
   "version": "1.0.0",
-  "description": "Meetup día 27 Mayo 2016 en Schibsted Spain sobre NPM",
-  "homepage": "http://davecarter.github.io/npm-meetup",
+  "description": "Clase día 28 Septiembre 2016 en EscuelaIT",
+  "homepage": "http://davecarter.github.io",
   "main": "js/reveal.js",
   "scripts": {
     "test": "grunt test",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:davecarter/npm-meetup.git"
+    "url": "git@github.com:AprendiendoFrontend/react-starter-kit.git"
   },
   "engines": {
     "node": "~4.1.1"
